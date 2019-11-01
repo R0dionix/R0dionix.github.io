@@ -1,2 +1,3 @@
 # R0dionix.github.io
-Тестовый макет сайта
+First Test Landing Page
+http://R0dionix.github.io/Test_1_Landing_Page

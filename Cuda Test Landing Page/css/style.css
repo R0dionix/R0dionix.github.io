@@ -1,0 +1,317 @@
+/*Стандартная ширина и высота header'a*/
+header {
+	width: 100%;
+	height: 100vh;
+	background-color: #87509c;
+}
+
+/*Убираем стандартные отступы*/
+*{
+ margin:0;
+ padding:0;
+}
+
+/*Стили для h1*/
+h1 {
+	font-family: Times New Roman;
+	font-weight: 400;
+	font-size: 25,83px;
+	text-align: center;
+	color: white;
+}
+/*Main-page*/
+.main-logo{
+	margin-left: 211px;
+	padding-top: 58px
+}
+
+/* Навигация */
+.main-nav-bar {
+	list-style-type: none;
+    float: right;
+	padding-right: 191px;
+	margin-top: -40px;
+	padding-left: 0;
+	margin-left: 0;
+}
+.main-nav-bar a {
+	text-decoration: none;
+	font-family: sans-serif;
+	color: white;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.main-nav-bar li :hover {
+	background-color: #643a79;
+	border-radius: 4px;
+}
+
+.main-nav-bar li {
+	display: inline;
+}
+/* /Навигация */
+
+.main-text {
+   margin-top: 144px;
+}
+
+.main-button {
+	width: 293px;
+	height: 70px;
+	margin: auto;
+	display: block;
+    position: absolute;
+    top: 142px; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    text-decoration: none;
+    border: none;
+    background-color: #eb7d4b;
+    border-bottom: 4px solid #c86a40;
+    border-radius: 4px;
+    color: white;
+}
+
+.main-button p {
+	font-size: 25px;
+}
+/* /Main-page */
+
+
+/*Services Section*/
+
+#services {
+	width: 100%;
+	height: 131vh;
+	background-color: #17c2a4;
+}
+
+.services-text h1 {
+	padding-top: 115px;
+	font-size: 40px;
+}
+
+.services-line {
+	width: 87px;
+	height: 8px;
+	background-color: #14a58c;
+	margin: auto;
+	margin-top: 20px;
+}
+.services-text-description p {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+}
+
+/*блок с изображениями*/
+
+.services-box {
+	width: 203px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	margin: 20px;
+}
+
+.services-box h2 {
+	margin-top: 60px;
+	white-space: nowrap;
+	font-size: 24px;
+}
+
+.services-box p {
+	margin-top: 25px;
+	font-size: 16px;
+}
+.services-container {
+	display: table;
+	margin: auto;
+	margin-top: 78px;
+}
+
+
+/* team section */
+#team-section {
+	background-color: #e7f1f8;
+	width: 100%;
+	height: 141vh;
+}
+
+.team-text h1 {
+	padding-top: 115px;
+	font-size: 40px;
+	color: #3c476a;
+}
+
+.team-line {
+	width: 87px;
+	height: 8px;
+	background-color: #c8d9e5;
+	margin: auto;
+	margin-top: 20px;
+}
+.team-text-description p {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 20px;
+	color: #3c476a;
+}
+
+/* Team-boxes */
+
+.team-container {
+	display: table;
+    margin: auto;
+    margin-top: 78px;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: #878787;
+	height: 179px;
+	width: 180px;
+	margin: 0px 21px;
+
+}
+
+.team-box {
+	display: inline-block;
+	margin: 20px;
+}
+.team-box h2 {
+	margin-top: 32px;
+	color: #3c4761;
+	white-space: nowrap;
+	font-size: 24px;
+	text-align: center;
+}
+
+.job-info {
+	text-align: center;
+	margin-top: 10px;
+	color: #53c2e9;
+}
+
+.team-box-description {
+	margin-top: 28px;
+	color: #3c4761;
+	text-align: center;
+}
+
+.team-circle-link {
+	width: 32px;
+	height: 32px;
+	background-color: #bdd1df;
+	border-radius: 50%;
+	border: none;
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.facebook-img {
+	display: block;
+	margin: 0 auto;
+}
+.twitter-img {
+	display: block;
+	margin: 0 auto;
+}
+.linkedIn-img {
+	display: block;
+	margin: 0 auto;
+}
+.mail-img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+.team-circle-links {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+}
+
+
+/* Эффекты */
+
+/* Убирает стандартные эффекты */
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Эффект наведения на кнопку */
+.team-circle-link:hover {
+	background-color: #dd794c;
+}
+
+/* Skills Section */
+
+#skills-section {
+	width: 100%;
+	height: 110vh;
+	background-color: white;
+}
+
+.skills-text h1 {
+	padding-top: 115px;
+	font-size: 40px;
+	color: #3c476a;
+}
+.skills-line {
+	width: 87px;
+	height: 8px;
+	background-color: #c8d9e5;
+	margin: auto;
+	margin-top: 20px;
+}
+.skills-text-description p {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 20px;
+	color: #3c476a;
+}
+
+.skills-container {
+	display: table;
+	margin: auto;
+	margin-top: 78px;
+}
+
+.skills-box {
+	display: inline-block;
+	margin: 40px;
+	width: 160px;
+}
+.skills-box {
+	position: relative;
+}
+
+.percent h2{
+	position: absolute;
+	top: 26%;
+	left: 26%;
+	font-size: 43px;
+	color: #3c4761;
+}
+
+.prog-description {
+	margin-top: 30px;
+	color: #3c4761;
+	white-space: nowrap;
+	text-align: center;
+}
+
+
+
+
+

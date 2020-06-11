@@ -1,5 +1,5 @@
 # My Projects:
-## [Waxom Site 2.2](https://r0dionix.github.io/Waxom%20site%202.2/ "Click').
+## [Waxom Site 2.2](https://r0dionix.github.io/Waxom%20site%202.2/ "Click").
 ## [Waxom Site 2.1](https://r0dionix.github.io/Waxom%20site%202.1/ "Click").
 ## [Waxom Site](https://r0dionix.github.io/Waxom%20site%202/ "Click").
 ## [Mamon_pro](https://r0dionix.github.io/mamon_pro/ "Click").

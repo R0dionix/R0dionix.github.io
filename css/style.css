@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* Базовые цвета */
+/* Шрифты */
+h1 {
+  font-family: "GothamPro-Black",sans-serif;
+  line-height: 30px;
+  letter-spacing: 2px; }
+
+p {
+  font-family: "GothamPro-Light",sans-serif;
+  line-height: 30px;
+  letter-spacing: 0.36px; }
+
+a {
+  position: relative;
+  font-family: "GothamPro-Light",sans-serif;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none; }
+
+/* Эффект наведения на ссылки навигации */
+li > a::before {
+  position: absolute;
+  content: '';
+  right: 0;
+  width: 0%;
+  bottom: -4px;
+  height: 2px;
+  background-color: #741414;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+
+li > a:hover:before {
+  width: 100%;
+  left: 0; }
+
+/* Скроллбар */
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(116, 20, 20, 0.4); }
+
+.logo-text {
+  font-family: "GothamPro-Bold",sans-serif;
+  font-size: 18px; }
+  .logo-text:hover {
+    color: #ccc9c9; }
+
+/* Ограничитель контента */
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1770px;
+  margin: 0 auto; }
+
+/* Навигация */
+.navigation {
+  z-index: 999;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 93px;
+  padding-bottom: 40px; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none; }
+
+.nav > li {
+  margin-left: 47px; }
+
+/* Главный экран */
+.main {
+  background-color: #0c0c0c;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(../img/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.main-container {
+  padding-top: 503px;
+  padding-bottom: 510px;
+  text-align: center; }
+
+/* Заголовок */
+.title {
+  font-size: 100px;
+  text-align: center;
+  color: #ccc9c9;
+  margin-top: 0; }
+
+/* Описание */
+.description {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 89px; }
+
+/* Кнопка */
+button {
+  font-family: "GothamPro-Bold",sans-serif;
+  font-size: 16px;
+  width: 290px;
+  height: 78px;
+  border: solid 3px #ccc9c9;
+  background-color: transparent;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #ffffff;
+  outline: none; }
+  button:hover {
+    border: none;
+    background-color: #741414; }

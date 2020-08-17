@@ -10,6 +10,11 @@ h1 {
 	line-height: 30px;
 	letter-spacing: 2px;
 }
+h2 {
+	font-family: "GothamPro-Black",sans-serif;
+	line-height: 30px;
+	letter-spacing: 2px;
+}
 p {
 	font-family: "GothamPro-Light",sans-serif;
 	line-height: 30px;
@@ -23,6 +28,14 @@ a {
 	font-size: 15px;
 	color: $white;
 	text-decoration: none;
+}
+h3 {
+	margin-top: 0;
+	margin-bottom: 19px;
+	font-family: "GothamPro-Bold",sans-serif;
+	line-height: 30px;
+	font-size: 22px;
+	letter-spacing: -1.1px;	
 }
 
 /* Эффект наведения на ссылки навигации */
@@ -55,13 +68,12 @@ li>a:hover:before {
     border-radius: 10px;
     background-color: rgba(116, 20, 20, 0.4); 
 }
-
-
 .logo-text {
 	font-family: "GothamPro-Bold",sans-serif;
 	font-size: 18px;
 	&:hover {
-		color: $gray;
+	    animation: pulse 1s;
+		color: $gray;		
 	}
 }
 
@@ -104,14 +116,14 @@ li>a:hover:before {
     background-size: cover;
     background-position: center center;
 }
-.main-container {
+.main-section {
 	padding-top: 503px;
 	padding-bottom: 510px;
 	text-align: center;
 }
 
 /* Заголовок */
-.title {
+.main-title {
 	font-size: 100px;
 	text-align: center;
 	color: $gray;
@@ -140,7 +152,206 @@ button {
     color: $white;
     outline: none;
     &:hover {
+    	cursor: pointer;
     	border: none;
     	background-color: $red;
     }
+}
+
+
+/* Секция 'Мои навыки' */
+.skill-section {
+	padding-top: 258px;
+	padding-bottom: 291px;
+}
+
+.skill-container {
+	display: flex;
+	justify-content: center;
+}
+
+.skill-box {
+	user-select: none;
+	text-align: center;
+	margin-right: 30px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+/* Эффект наведения на блок */
+.holder {
+	position: relative;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	padding-right: 82px;
+	padding-left: 82px;
+	background-color: $white;
+	&:hover {
+		animation: fadeIn 1s;
+		background-color: $black;
+		.skill-description {
+			color: $white;
+		}
+		h3 {
+			color: $gray;
+		}
+		.vertical-line {
+			display: block;
+		}
+		.horizontal-line {
+			display: block;
+		}
+	}
+}
+
+/* Описание */
+.skill-description {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "GothamPro-Light",sans-serif;
+	line-height: 20px;
+	letter-spacing: 0.36px;
+}
+
+
+.vertical-line {
+	position: absolute;
+	left: -10px;
+	bottom: 0;
+	border-left: 10px solid $red;
+	display: none;
+	height: 144px;
+}
+.horizontal-line {
+	position: absolute;
+	left: -10px;
+	top: 153px;
+	border-bottom: 10px solid $red;
+	display: none;
+	width: 370px;
+}
+
+
+/* Секция 'Портфолио' */
+
+.portfolio {
+	background-color: $black;
+	width: 100%;
+	max-width: 100%;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	background-image: url(../img/portfolio-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.portfolio-section {
+	padding-top: 137px;
+	padding-bottom: 191px;
+}
+
+/* Заголовок */
+.title {
+	font-size: 70px;
+	text-align: center;
+	color: $gray;
+	margin-top: 0;
+}
+/* Описание */
+.portfolio-description {
+	font-size: 18px;
+	color: $white;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 151px;	
+}
+
+.portfolio-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* Блок с изображением */
+.portfolio-box{
+	margin-bottom: 30px;
+	&:nth-child(2) {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	&:nth-child(5) {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+}
+
+.rectangle {
+	width: 360px;
+	height: 274px;
+	background-color: #afaaaa;
+}
+.overlay {
+	cursor: pointer;
+	background-color: #121213;
+	width: 360px;
+	height: 274px;
+	position: absolute;
+	opacity: 0;
+	&:hover {
+		opacity: 0.612;
+	}
+}
+.swiper-wrapper {
+	margin-bottom: 43px;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background: $gray;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: $red;
+    opacity: 1;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Подвал */
+.footer {
+	background-color: $black;
+}
+.line {
+	background-color: $gray;
+	width: 100%;
+	height: 2px;
+}
+.contacts-container {
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Заголовок */
+.social-media-title {
+	color: $gray;
+	margin-bottom: 30px;
 }

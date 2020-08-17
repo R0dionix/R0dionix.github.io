@@ -1,39 +1,213 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Website Portfolio</title>
-	<meta name="viewport" content="width=1770">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<!-- Шапка -->
-	<header class="header">
-		<div class="wrapper">
-			<div class="navigation">
-				<a href="https://github.com/R0dionix"><span class="logo-text">Rodionix</span></a>
-				<ul class="nav">
-				<li><a href="">Главная</a></li>
-				<li><a href="">Мои навыки</a></li>
-				<li><a href="">Портфолио</a></li>
-				<li><a href="">Контакты</a></li>
-			</ul>
-			</div>			
-		</div>		
-	</header>
-
-	<!-- Главный экран -->
-	<div class="main">
-		<div class="main-container">
+	<head>
+		<meta charset="UTF-8">
+		<title>Website Portfolio</title>
+		<meta content="width=1170" name="viewport" id="viewport">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- Шапка -->
+		<header class="header">
 			<div class="wrapper">
-				<h1 class="title">Website Portfolio</h1>
-				<p class="description">eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean </p>
-				<button>Подробнее</button>
+				<div class="navigation">
+					<a href="https://github.com/R0dionix"><p class="logo-text">Rodionix</p></a>
+					<ul class="nav">
+						<li><a class="link" href="#main">Главная</a></li>
+						<li><a class="link" href="#skill">Мои навыки</a></li>
+						<li><a class="link" href="#portfolio">Портфолио</a></li>
+						<li><a class="link" href="">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- Главный экран -->
+		<div  id="main" class="main">
+			<div class="main-section">
+				<div class="wrapper">
+					<h1 class="main-title">Website Portfolio</h1>
+					<p class="description">eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean </p>
+					<button>Подробнее</button>
+				</div>
 			</div>
 		</div>
-	</div>
-	
-</body>
+		<!-- Мои навыки -->
+		<div id="skill" class="skill">
+			<div class="skill-section">
+				<div class="wrapper">
+					<div class="skill-container">
+						<div class="skill-box">
+							<img src="img/icons/code.svg" width="91" hight="72" alt="">
+							<div class="holder">
+								<span class="vertical-line"></span>
+								<h3>Веб-разработка</h3>
+								<p class="skill-description">eget sit amet tellus cras<br>adipiscing enim eu turpis<br>egestas pretium aenean </p>
+								<span class="horizontal-line"></span>
+							</div>
+						</div>
+						<div class="skill-box">
+							<img src="img/icons/code.svg" width="91" hight="72" alt="">
+							<div class="holder">
+								<span class="vertical-line"></span>
+								<h3>Веб-разработка</h3>
+								<p class="skill-description">eget sit amet tellus cras<br>adipiscing enim eu turpis<br>egestas pretium aenean </p>
+								<span class="horizontal-line"></span>
+							</div>
+						</div>
+						<div class="skill-box">
+							<img src="img/icons/code.svg" width="91" hight="72" alt="">
+							<div class="holder">
+								<span class="vertical-line"></span>
+								<h3>Веб-разработка</h3>
+								<p class="skill-description">eget sit amet tellus cras<br>adipiscing enim eu turpis<br>egestas pretium aenean </p>
+								<span class="horizontal-line"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Портфолио -->
+		<div id="portfolio" class="portfolio">
+			<div class="portfolio-section">
+				<div class="wrapper">
+					<h2 class="title">Портфолио</h2>
+					<p class="portfolio-description">eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean </p>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="portfolio-container swiper-slide">
+								<div class="portfolio-box">
+									<div class="overlay" onclick="location.href='https://r0dionix.github.io/projects/Waxom%20site%202.3/'"></div>
+									<div class="rectangle"><img src="img/projects/1.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="overlay" onclick="location.href='https://r0dionix.github.io/projects/Pizza%20Site/'"></div>
+									<div class="rectangle"><img src="img/projects/2.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+							</div>
+							<div class="portfolio-container swiper-slide">
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+							</div>
+							<div class="portfolio-container swiper-slide">
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+							</div>
+							<div class="portfolio-container swiper-slide">
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+							</div>
+							<div class="portfolio-container swiper-slide">
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img src="img/template.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="line"></div>
+			<div class="wrapper">
+				<div class="contacts-container">
+					<h3 class="social-media-title">Социальные сети</h2>
+				</div>
+			</div>
+		</footer>
+		<!-- Скрипты -->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/scroll.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script>
+		var swiper = new Swiper('.swiper-container', {
+		pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		},
+		});
+		</script>
+	</body>
 </html>

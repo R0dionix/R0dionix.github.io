@@ -253,6 +253,7 @@ button {
   margin-bottom: 151px; }
 
 .portfolio-container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,13 +268,7 @@ button {
 
 /* Блок с изображением */
 .portfolio-box {
-  margin-bottom: 30px; }
-  .portfolio-box:nth-child(2) {
-    margin-right: 30px;
-    margin-left: 30px; }
-  .portfolio-box:nth-child(5) {
-    margin-right: 30px;
-    margin-left: 30px; }
+  margin: 15px; }
 
 .rectangle {
   width: 360px;

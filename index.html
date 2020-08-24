@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/all.min.css">
 	</head>
 	<body>
 		<!-- Шапка -->
@@ -81,15 +82,16 @@
 						<div class="swiper-wrapper">
 							<div class="portfolio-container swiper-slide">
 								<div class="portfolio-box">
-									<div class="overlay" onclick="location.href='https://r0dionix.github.io/projects/Waxom%20site%202.3/'"></div>
+									<div class="overlay" onclick="window.open('https://r0dionix.github.io/projects/Waxom%20site%202.3/','new_window');"></div>
 									<div class="rectangle"><img src="img/projects/1.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="overlay" onclick="location.href='https://r0dionix.github.io/projects/Pizza%20Site/'"></div>
+									<div class="overlay" onclick="window.open('https://r0dionix.github.io/projects/Pizza%20Site/','new_window');" ></div>
 									<div class="rectangle"><img src="img/projects/2.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="overlay" onclick="window.open('https://r0dionix.github.io/projects/Test_1_Landing_Page_1.2/','new_window');"></div>
+									<div class="rectangle"><img src="img/projects/3.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
 									<div class="rectangle"><img src="img/template.png" alt=""></div>
@@ -188,12 +190,16 @@
 			</div>
 		</div>
 		<!-- Подвал -->
+		<div class="line"></div>
 		<footer class="footer">
-			<div class="line"></div>
 			<div class="wrapper">
+				<h3 class="social-media-title">Социальные сети</h3>
 				<div class="contacts-container">
-					<h3 class="social-media-title">Социальные сети</h3>
+				<a href="#"><i class="fab fa-vk"></i></a>
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-behance"></i></a>
 				</div>
+				<p class="copyright">©Rodionix</p>
 			</div>
 		</footer>
 		<!-- Скрипты -->
@@ -201,8 +207,12 @@
 		<script src="js/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/scroll.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
+
+
+
 		<script>
 		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 1,
 		pagination: {
 		el: '.swiper-pagination',
 		clickable: true,

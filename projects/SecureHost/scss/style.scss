@@ -1,0 +1,174 @@
+
+/* Базовые стили */
+button {
+	border: none;
+	outline: none;
+}
+// Ограничитель контентной части
+.wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+    max-width: 1170px;
+    position: relative;
+    margin: 0 auto;
+}
+// Базовые Цвета
+$white: #ffffff;
+$blue: #5994ff;
+$dark-blue: #3d4490;
+$gray: #a1aeb7;
+$dark-gray: #4e5a6d;
+
+
+// Временное правило
+h2,p {
+	margin: 0;
+}
+
+
+
+
+// Шапка
+.header { 
+	padding-top: 13px;
+	padding-bottom: 8px;
+	width: 100%;
+	background-image: -moz-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-text {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-style: 16px;
+	letter-spacing: 1px;
+	margin-left: 106px;
+	margin-top: 11px;
+	margin-bottom: 0;
+}
+a {
+	color: $white;
+	text-decoration: none;
+}
+
+
+.login-menu {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	display: flex;
+	margin-right: 89px;
+}
+.login-link {
+	margin-right: 22px;
+    margin-top: 12px;
+}
+.register-link {
+    margin-right: 48px;
+    border: solid 1px $white;
+    border-radius: 4px;
+    padding: 9px 13px 9px 13px;
+}
+
+
+
+// Главный экран
+.main-page {
+	padding-top: 178px;
+	padding-bottom: 174px;
+
+}
+.liquid-form {
+    background-image: url(../img/form2.png);
+    position: absolute;
+    top: -178px;
+    left: -373px;
+    width: 893px;
+    height: 532px;
+}
+.main-img {
+    position: absolute;
+    top: -208px;
+    right: 98px;
+    width: 633px;
+    height: 501px;
+}
+.main-title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	line-height: 38px;
+	font-size: 30px;
+	color: $dark-gray;
+	margin-left: 98px;
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+.description {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: $gray;
+	margin-bottom: 27px;
+	margin-left: 98px;
+}
+.main-btn {
+	padding: 8px 27px;
+	letter-spacing: 0.3px;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	margin-left: 98px;
+	background-color: $blue;
+	color: $white;
+	text-transform: uppercase;
+}
+
+
+
+
+
+// О компании
+.about-us {
+	padding-top: 78px;
+	padding-bottom: 85px;
+	background-image: -moz-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+}
+.about-us-container {
+	display: flex;
+}
+
+.headline {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	margin-left: 98px;
+}
+
+.about-us-headline {
+	margin-top: 40px;
+	color: $white;
+
+}
+.about-us-description {
+	line-height: 19px;
+	color: $white;
+	margin-top: 20px;
+}
+
+.video {
+	margin-left: 43px;
+	width: 453px;
+	height: 340px;
+	background-color: $dark-gray;
+}

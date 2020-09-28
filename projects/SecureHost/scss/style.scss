@@ -1,8 +1,65 @@
 
 /* Базовые стили */
+h1 {
+	line-height: 38px;
+}
+
+h2 {
+	font-size: 30px;
+}
+h3 {
+    font-size: 40px;
+}
+h4 {
+	font-size: 17px;	
+}
+p {
+	font-size: 14px;
+}
 button {
 	border: none;
 	outline: none;
+}
+h2,p,h3,h4 {
+	margin: 0;
+}
+
+/* Классы для базового позиционирования */
+.center {
+	text-align: center;
+}
+// Базовый стиль отступа
+.left {
+	margin-left: 113px;
+}
+
+// Внешний вид ссылок
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Шрифты */
+.rbt-black {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+}
+.rbt-bold {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+.rbt-medium {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+.rbt-regular {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+.rbt-light {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+
 }
 // Ограничитель контентной части
 .wrapper {
@@ -20,113 +77,106 @@ $gray: #a1aeb7;
 $dark-gray: #4e5a6d;
 
 
-// Временное правило
-h2,p {
-	margin: 0;
-}
 
 
 
-
-// Шапка
+/* Шапка */
 .header { 
 	padding-top: 13px;
-	padding-bottom: 8px;
+	padding-bottom: 6px;
 	width: 100%;
 	background-image: -moz-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
     background-image: -webkit-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
     background-image: -ms-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
 }
-
+// Навигация
 .navigation {
 	display: flex;
 	justify-content: space-between;
 }
-
+// Логотип
 .logo-text {
-	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	font-weight: 700;
-	font-style: 16px;
+	font-size: 16px;
 	letter-spacing: 1px;
-	margin-left: 106px;
-	margin-top: 11px;
+	margin-left: 121px;
+	margin-top: 4px;
 	margin-bottom: 0;
 }
-a {
-	color: $white;
-	text-decoration: none;
-}
 
 
+// меню авторизации/регистрации
 .login-menu {
-	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	font-weight: 400;
 	font-size: 14px;
 	display: flex;
 	margin-right: 89px;
 }
+// Ссылка авторизации
 .login-link {
 	margin-right: 22px;
-    margin-top: 12px;
+    margin-top: 6px;
 }
+// Ссылка регистрации
 .register-link {
-    margin-right: 48px;
+    margin-right: 33px;
+    margin-top: -4px;
     border: solid 1px $white;
     border-radius: 4px;
-    padding: 9px 13px 9px 13px;
+    padding: 8px 13px 8px 13px;
 }
 
 
 
-// Главный экран
-.main-page {
-	padding-top: 178px;
+/* Главный экран */
+.main-page-section {
+	padding-top: 179px;
 	padding-bottom: 174px;
 
 }
+// Жидкая форма
 .liquid-form {
+	z-index: -1;
     background-image: url(../img/form2.png);
     position: absolute;
     top: -178px;
-    left: -373px;
+    left: -360px;
     width: 893px;
     height: 532px;
 }
+// Векторное изображение
 .main-img {
+	z-index: -1;
     position: absolute;
     top: -208px;
-    right: 98px;
-    width: 633px;
+    right: 81px;
+    width: 639px;
     height: 501px;
 }
+// Главный заголовок
 .main-title {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 900;
-	line-height: 38px;
 	font-size: 30px;
 	color: $dark-gray;
-	margin-left: 98px;
+	margin-left: 113px;
 	margin-top: 0;
 	margin-bottom: 24px;
 }
+// Стиль для главного описания
+.main-description {
+	margin-bottom: 27px;
+}
+// Описание
 .description {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
 	font-size: 14px;
 	color: $gray;
-	margin-bottom: 27px;
-	margin-left: 98px;
 }
+// Главная кнопка
 .main-btn {
-	padding: 8px 27px;
+	padding: 8px 26px;
 	letter-spacing: 0.3px;
 	border-radius: 4px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
 	font-size: 16px;
-	margin-left: 98px;
+	margin-left: 113px;
 	background-color: $blue;
 	color: $white;
 	text-transform: uppercase;
@@ -136,39 +186,182 @@ a {
 
 
 
-// О компании
-.about-us {
-	padding-top: 78px;
-	padding-bottom: 85px;
+/* О компании */
+.about-us-section {
+	padding-top: 81px;
+	padding-bottom: 82px;
 	background-image: -moz-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
 	background-image: -webkit-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
 	background-image: -ms-linear-gradient( 0deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
 }
+// flex-контейнер
 .about-us-container {
 	display: flex;
 }
 
+// Цвет для заголовков
 .headline {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	margin-left: 98px;
+	color: $dark-gray;
 }
 
 .about-us-headline {
-	margin-top: 40px;
+	margin-left: 113px;
+	margin-top: 39px;
 	color: $white;
 
 }
 .about-us-description {
-	line-height: 19px;
+	line-height: 20px;
 	color: $white;
-	margin-top: 20px;
+	margin-top: 19px;
 }
 
+// Видео-блок
 .video {
 	margin-left: 43px;
 	width: 453px;
 	height: 340px;
 	background-color: $dark-gray;
+}
+
+
+/* Цены */
+
+/* Секция цены */
+.prices-section {
+	width: 100%;
+	padding-top: 87px;
+	padding-bottom: 146px;
+}
+// Заголовок
+.prices-headline {
+	margin-bottom: 13px;
+}
+// Описание
+.prices-description {
+	margin-bottom: 61px;
+}
+// flex-контейнер
+.prices-container {
+	display: flex;
+	justify-content: center;
+	padding-left: 188px;
+	padding-right: 188px;
+}
+.prices-box {
+	border-radius: 3px;
+	width: 252px;
+	height: 463px;
+	background: $white;
+	&:nth-child(2) {
+		margin-left: 18px;
+	}
+	&:nth-child(3) {
+		margin-left: 18px;
+	}
+}
+// Эффект наведения на бокс
+.prices-box {
+	&:hover {
+  background-image: -moz-linear-gradient( -90deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(89,148,255) 0%, rgb(61,68,144) 100%);
+  box-shadow: -7.94px -0.975px 43px 0px rgba(0, 0, 0, 0.1);
+  .price-subtitle {
+  	color: $white;
+  }
+  .price-value {
+  	color: $white;
+  }
+  .price-month {
+  	color: $white;
+  }
+  .price-legend {
+  	color: $white;
+  }
+  .line {
+  	background-color: $white;
+  }
+  .plan-color {
+  	color: $white;
+  }
+  span {
+  	color: $white;
+  }
+  .btn-detail {
+  	color: $dark-gray;
+  	background-color: $white;
+  	border-color: $white;
+  }
+	}
+
+}
+// Текст внутри бокса
+.prices-box-text {
+	padding: 19px;
+}
+// Подзаголовок
+.price-subtitle {
+	color: $gray;
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
+// Значение цены
+.price-value {
+	color: $dark-gray;
+	margin-bottom: 10px;
+}
+// Значение времени - месяц
+.price-month {
+	color: $dark-gray;
+	font-size: 12px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+// Описание тарифа
+.price-legend {
+	margin-bottom: 43px;
+	color: $gray;
+}
+// Линия - разделитель
+.line {
+	margin: 0 auto 29px auto;
+	display: block;
+	background-color: $gray;
+	width: 180px;
+	height: 1px;
+}
+span {
+	color: $dark-gray;
+}
+// Базовый цвет текста тарифа
+.plan-color {
+	color: $gray;
+}
+// Описание услуги
+.plan-desc-1{
+	padding-right: 23px;
+	margin-bottom: 10px;
+}
+.plan-desc-2{
+	padding-left: 38px;
+	margin-bottom: 10px;
+}
+.plan-desc-3 {
+	margin-bottom: 10px;
+	padding-right: 39px;
+}
+.plan-desc-4 {
+	padding-right: 16px;
+}
+// Кнопка "Подробнее"
+.btn-detail {
+	border: solid 1px $dark-gray;
+	font-size: 16px;
+	color: #bfc7cd;
+	background-color: transparent;
+	border-radius: 4px;
+	padding: 7px 17px 7px 17px;
+	display: block;
+	margin: 32px auto 0 auto;
 }

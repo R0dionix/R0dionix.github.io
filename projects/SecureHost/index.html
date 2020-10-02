@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SecureHost - безопасный хостинг для ваших проектов</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<!-- Шапка -->
-	<header class="header">
-		<div class="wrapper">
-			<div class="navigation">
-				<a href="#">
-					<p class="logo-text rbt-bold">SecureHost</p>
-				</a>
-				<div class="login-menu">
-					<a href="#"><p class="login-link">Войти</p></a>
-					<a href="#"><p class="register-link">Регистрация</p></a>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=1170">
+		<title>SecureHost - безопасный хостинг для ваших проектов</title>
+		<link rel="stylesheet" href="css/fonts-style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- Шапка -->
+		<header class="header">
+			<div class="wrapper">
+				<div class="navigation">
+					<p class="logo-text rbt-bold"><a href="#">SecureHost</a></p>
+					<div class="login-menu">
+					<p class="login-link rbt-regular"><a href="#">Войти</a></p>
+					<p class="register-link rbt-regular"><a href="#">Регистрация</a></p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-
-<!-- Главный экран -->
-	<section class="main-page-section">
-		<div class="wrapper">
-			<div class="liquid-form"></div>
-		<img class="main-img" src="img/bg-image.svg" alt="">
-			<h1 class="main-title rbt-black">Безопасный хостинг <br> для ваших проектов</h1>
-			<p class="left description main-description rbt-regular">Закажите сегодня, чтобы не откладывать на завтра.</p>
-			<button class="main-btn rbt-bold">Заказать</button>
-		</div>
-	</section>
-
-
-<!-- О компании -->
-	<section class="about-us-section">
-		<div class="wrapper">
-			<div class="about-us-container">
-				<div class="about-us-box">
-					<h2 class="headline about-us-headline rbt-bold">О компании</h2>
-					<p class="left description about-us-description rbt-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br> commodo consequat  incididunt ut laboret.</p>
-				</div>
-				<div class="video"></div>
+		</header>
+		<!-- Главный экран -->
+		<section class="main-page">
+			<div class="wrapper">
+				<div class="liquid-form"></div>
+				<img class="main-img" src="img/bg-image.svg" alt="">
+				<h1 class="main-title rbt-black">Безопасный хостинг <br> для ваших проектов</h1>
+				<p class="left description main-description rbt-regular">Закажите сегодня, чтобы не откладывать на завтра.</p>
+				<button class="main-btn rbt-bold">Заказать</button>
 			</div>
-		</div>
-	</section>
-
-<!-- Цены -->
-	<section class="prices-section">
-		<div class="wrapper">
+		</section>
+		<!-- О компании -->
+		<section class="about-us">
+			<div class="wrapper">
+				<div class="about-us-container">
+					<div class="about-us-box">
+						<h2 class="headline about-us-headline rbt-bold">О компании</h2>
+						<p class="left description about-us-description rbt-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br> commodo consequat  incididunt ut laboret.</p>
+					</div>
+					<div class="video"></div>
+				</div>
+			</div>
+		</section>
+		<!-- Цены -->
+		<section class="prices">
+			<div class="wrapper">
 				<h2 class="headline prices-headline center rbt-bold">Цены</h2>
 				<p class="description prices-description center rbt-regular">Выберите желаемый тариф</p>
 				<div class="prices-container">
@@ -63,59 +58,101 @@
 							<p class="price-month center rbt-light">Месяц</p>
 							<p class="price-legend center rbt-regular">Идеальное решение <br> для ваших начинаний</p>
 							<span class="line"></span>
-							<p class="plan-color plan-desc-1 center rbt-regular"><span>1</span> Сайт</p>
-							<p class="plan-color plan-desc-2 center rbt-regular"><span>1</span> E-mail аккаунт</p>
-							<p class="plan-color plan-desc-3 center rbt-regular"><span>100 гб</span> Трафик</p>
-							<p class="plan-color plan-desc-4 center rbt-regular"><span>Бесплатный</span> SSL - сертификат</p>
+							<p class="plan-color plan-desc-1 center rbt-regular"><span class="color-sep">1</span> Сайт</p>
+							<p class="plan-color plan-desc-2 center rbt-regular"><span class="color-sep">1</span> E-mail аккаунт</p>
+							<p class="plan-color plan-desc-3 center rbt-regular"><span class="color-sep">100 гб</span> Трафик</p>
+							<p class="plan-color plan-desc-4 center rbt-regular"><span class="color-sep">Бесплатный</span> SSL - сертификат</p>
 							<button class="btn-detail rbt-bold">Подробнее</button>
 						</div>
 					</div>
 					<div class="prices-box">
 						<div class="prices-box-text">
-							<h4 class="price-subtitle center rbt-medium">Стартовый</h4>
-							<h3 class="price-value center rbt-bold">449,00₽</h3>
+							<h4 class="price-subtitle center rbt-medium">Премиальный</h4>
+							<h3 class="price-value center rbt-bold">639,00₽</h3>
 							<p class="price-month center rbt-light">Месяц</p>
-							<p class="price-legend center rbt-regular">Идеальное решение <br> для ваших начинаний</p>
+							<p class="price-legend center rbt-regular">Отличный вариант <br> для личных сайтов</p>
 							<span class="line"></span>
-							<p class="plan-color plan-desc-1 center rbt-regular"><span>1</span> Сайт</p>
-							<p class="plan-color plan-desc-2 center rbt-regular"><span>1</span> E-mail аккаунт</p>
-							<p class="plan-color plan-desc-3 center rbt-regular"><span>100 гб</span> Трафик</p>
-							<p class="plan-color plan-desc-4 center rbt-regular"><span>Бесплатный</span> SSL - сертификат</p>
+							<p class="plan-color plan-desc-1 center rbt-regular"><span class="color-sep">1</span> Сайт</p>
+							<p class="plan-color plan-desc-2 center rbt-regular"><span class="color-sep">1</span> E-mail аккаунт</p>
+							<p class="plan-color plan-desc-3 center rbt-regular"><span class="color-sep">100 гб</span> Трафик</p>
+							<p class="plan-color plan-desc-4 center rbt-regular"><span class="color-sep">Бесплатный</span> SSL - сертификат</p>
 							<button class="btn-detail rbt-bold">Подробнее</button>
 						</div>
 					</div>
 					<div class="prices-box">
 						<div class="prices-box-text">
-							<h4 class="price-subtitle center rbt-medium">Стартовый</h4>
-							<h3 class="price-value center rbt-bold">449,00₽</h3>
+							<h4 class="price-subtitle center rbt-medium">Продвинутый</h4>
+							<h3 class="price-value center rbt-bold">849,00₽</h3>
 							<p class="price-month center rbt-light">Месяц</p>
-							<p class="price-legend center rbt-regular">Идеальное решение <br> для ваших начинаний</p>
+							<p class="price-legend center rbt-regular">Лучший вариант <br> для бизнеса</p>
 							<span class="line"></span>
-							<p class="plan-color plan-desc-1 center rbt-regular"><span>1</span> Сайт</p>
-							<p class="plan-color plan-desc-2 center rbt-regular"><span>1</span> E-mail аккаунт</p>
-							<p class="plan-color plan-desc-3 center rbt-regular"><span>100 гб</span> Трафик</p>
-							<p class="plan-color plan-desc-4 center rbt-regular"><span>Бесплатный</span> SSL - сертификат</p>
+							<p class="plan-color plan-desc-1 center rbt-regular"><span class="color-sep">1</span> Сайт</p>
+							<p class="plan-color plan-desc-2 center rbt-regular"><span class="color-sep">1</span> E-mail аккаунт</p>
+							<p class="plan-color plan-desc-3 center rbt-regular"><span class="color-sep">100 гб</span> Трафик</p>
+							<p class="plan-color plan-desc-4 center rbt-regular"><span class="color-sep">Бесплатный</span> SSL - сертификат</p>
 							<button class="btn-detail rbt-bold">Подробнее</button>
 						</div>
 					</div>
 				</div>
-		</div>
-	</section>
-
-
-<!-- Преимущества -->
-	<!-- <section class="Benefits">
-		<div class="wrapper">
-			<h2 class="headline">Преимущества</h2>
-			<p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do eiusmod tempor.</p>
-		</div>
-	</section> -->
-
-
-
-<!-- Подвал -->
-	<footer class="footer">
-			<div class="wrapper"></div>
-		</footer>	
-</body>
+			</div>
+		</section>
+		<!-- Преимущества -->
+		<section class="benefits">
+			<div class="wrapper">
+				<h2 class="headline benefits-headline rbt-bold center">Преимущества</h2>
+				<p class="description benefits-description center rbt-regular">Lorem ipsum dolor sit amet,consectetur adipisicing elit,<br>sed do eiusmod tempor.</p>
+				<div class="benefits-container">
+					<div class="benefits-box">
+					<div class="benefits-box-text">
+						<span class="icon"><i class="fas fa-shield-alt"></i></span>
+						<h5 class="benefits-box-subtitle rbt-bold">Безопасность</h5>
+						<p class="benefits-box-desc rbt-regular">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt utla.</p>
+					</div>
+				</div>
+				<div class="benefits-box">
+					<div class="benefits-box-text">
+						<span class="icon"><i class="fas fa-bolt"></i></span>
+						<h5 class="benefits-box-subtitle rbt-bold">Бесперебойная работа</h5>
+						<p class="benefits-box-desc rbt-regular">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt utla.</p>
+					</div>
+				</div>
+				<div class="benefits-box">
+					<div class="benefits-box-text">
+						<span class="icon"><i class="fas fa-headset"></i></span>
+						<h5 class="benefits-box-subtitle rbt-bold">Поддержка</h5>
+						<p class="benefits-box-desc rbt-regular">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt utla.</p>
+					</div>
+				</div>
+				<div class="benefits-box">
+					<div class="benefits-box-text">
+						<span class="icon"><i class="fas fa-check-square"></i></span>
+						<h5 class="benefits-box-subtitle rbt-bold">Гарантия</h5>
+						<p class="benefits-box-desc rbt-regular">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt utla.</p>
+					</div>
+				</div>
+				</div>
+			</div>
+		</section>
+		<!-- Подвал -->
+		<!-- <footer class="footer">
+			<div class="wrapper">
+				<div class="footer-container">
+					<div class="left-side-footer">	
+					<p class="logo-text-footer rbt-bold"><a href="#">SecureHost</a></p>
+					<p class="footer-description rbt-regular">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua</p>	
+					<div class="social-links">
+						<a href="#"><i class="soc-icon fab fa-vk"></i></a>
+						<a href="#"><i class="soc-icon fab fa-github"></i></a>
+						<a href="#"><i class="soc-icon fab fa-behance"></i></a>
+					</div>
+					</div>
+					<div class="right-side-footer">
+						<div class="footer-nav">
+							<p class="rbt-regular footer-nav-subtitle">Навигация</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer> -->
+	</body>
 </html>

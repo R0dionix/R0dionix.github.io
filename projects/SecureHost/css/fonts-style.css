@@ -1,0 +1,22 @@
+/* Шрифты */
+.rbt-black {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+}
+.rbt-bold {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+.rbt-medium {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+.rbt-regular {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+.rbt-light {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+
+}

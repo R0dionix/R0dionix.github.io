@@ -49,25 +49,14 @@ li>a::before {
 	background-color: $red;
 	transition: 0.2s;
 }
+li>a:hover {
+	color: $gray;
+}
 li>a:hover:before {
 	width: 100%;
 	left: 0;
 }
 
-/* Скроллбар */
-::-webkit-scrollbar {
-    width: 5px;
-}
- 
-::-webkit-scrollbar-track {
-    background: #0c0c0c; 
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: rgba(116, 20, 20, 0.4); 
-}
 .logo-text {
 	font-family: "GothamPro-Bold",sans-serif;
 	text-transform: uppercase;
@@ -82,19 +71,19 @@ li>a:hover:before {
 .wrapper {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1770px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 /* Навигация */
 .navigation {
     z-index: 999; 
     position: absolute;
-    left: 15px;
-    right: 15px;
+	left: 107px;
+    right: 113px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 93px;
+    padding-top: 48px;
     padding-bottom: 40px;
 }
 .nav {
@@ -104,7 +93,6 @@ li>a:hover:before {
 .nav>li {
   margin-left: 47px;
 }
-
 /* Главный экран */
 .main {
 	background-color: $black;
@@ -116,9 +104,7 @@ li>a:hover:before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
-.main-section {
-	padding-top: 503px;
+    padding-top: 503px;
 	padding-bottom: 510px;
 	text-align: center;
 }
@@ -128,7 +114,8 @@ li>a:hover:before {
 	font-size: 100px;
 	text-align: center;
 	color: $gray;
-	margin-top: 0;
+    margin-top: 0;
+    margin-bottom: 52px;
 }
 
 /* Описание */
@@ -137,7 +124,7 @@ li>a:hover:before {
 	color: $white;
 	text-align: center;
 	margin-top: 0;
-	margin-bottom: 89px;
+    margin-bottom: 82px;
 }
 
 /* Кнопка */
@@ -161,7 +148,7 @@ button {
 
 
 /* Секция 'Мои навыки' */
-.skill-section {
+.skill {
 	padding-top: 258px;
 	padding-bottom: 291px;
 }
@@ -245,10 +232,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
-
-.portfolio-section {
-	padding-top: 137px;
+    padding-top: 137px;
 	padding-bottom: 191px;
 }
 
@@ -316,47 +300,6 @@ button {
     margin: 0 5px;
 }
 
-@media (max-device-width: 480px) {
-	.skill-description {
-		br {
-			display: none;
-		}
-		letter-spacing: 0.1px;
-	}
-.vertical-line {
-	position: absolute;
-	left: -10px;
-	bottom: 0;
-	border-left: 10px solid $red;
-	display: none;
-	height: 165px;
-}
-.horizontal-line {
-	position: absolute;
-	left: -10px;
-	top: 173px;
-	border-bottom: 10px solid $red;
-	display: none;
-	width: 360px;
-}
-	.portfolio-box {
-		margin: 10px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Подвал */
 .footer {
@@ -397,4 +340,84 @@ button {
 .copyright {
 	color: $white;
 	font-size: 14px;
+}
+
+
+
+/* Media - запросы */
+
+// Телефоны
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	// Навигация
+	.navigation {
+		left: 15px;
+	}
+	.nav {
+		display: none;
+	}
+	// Главный экран
+	.main {
+		padding-top: 200px;
+		padding-bottom: 200px;
+
+	}
+	h1 {
+		line-height: 50px;;
+	}
+	.main-title {
+		font-size: 50px;
+	}
+	button {
+		width: 200px;
+	}
+
+	// Мои навыки
+	.skill-container {
+		flex-direction: column;
+	}
+	.skill-box {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.skill-description {
+		letter-spacing: 0.1px;
+	}
+.vertical-line {
+	position: absolute;
+	left: -10px;
+	bottom: 0;
+	border-left: 10px solid $red;
+	display: none;
+	height: 165px;
+}
+.horizontal-line {
+	position: absolute;
+	left: -10px;
+	top: 173px;
+	border-bottom: 10px solid $red;
+	display: none;
+	width: 360px;
+}
+// Портфолио
+    .title {
+    	font-size: 40px;
+    }
+	.portfolio-box {
+		margin: 5px;
+	}
+		.rectangle {
+		width: 280px;
+		height: 280px;
+	}
+	.overlay {
+			width: 280px;
+			height: 280px;
+		}
+		.project_img {
+			width: 280px;
+			height: 280px;
+		}
 }

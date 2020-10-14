@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Website Portfolio</title>
-		<meta content="width=1170" name="viewport" id="viewport">
+		<meta content="width=device-width" name="viewport" id="viewport">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
-		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -14,9 +14,8 @@
 	<body>
 		<!-- Шапка -->
 		<header class="header">
-			<div class="wrapper">
-				<div class="navigation">
-					<a href="https://github.com/R0dionix"><p class="logo-text">Rodionix</p></a>
+				<div class="navigation wow slideInLeft">
+					<a class="logo-text" href="https://github.com/R0dionix">Rodionix</a>
 					<ul class="nav">
 						<li><a class="link" href="#main">Главная</a></li>
 						<li><a class="link" href="#skill">Мои навыки</a></li>
@@ -24,24 +23,22 @@
 						<li><a class="link" href="#footer">Контакты</a></li>
 					</ul>
 				</div>
-			</div>
 		</header>
 		<!-- Главный экран -->
-		<div  id="main" class="main">
-			<div class="main-section">
+		<section  id="main" class="main">
 				<div class="wrapper">
-					<h1 class="main-title">Website Portfolio</h1>
-					<p class="description">eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean </p>
-					<button>Подробнее</button>
+						<div class="main-container wow slideInLeft">
+							<h1 class="main-title">Website Portfolio</h1>
+							<p class="description">Сайт для демонстрации созданных проектов</p>
+							<button>Подробнее</button>
+						</div>
 				</div>
-			</div>
-		</div>
+		</section>
 		<!-- Мои навыки -->
-		<div id="skill" class="skill">
-			<div class="skill-section">
+		<section id="skill" class="skill">
 				<div class="wrapper">
 					<div class="skill-container">
-						<div class="skill-box">
+						<div class="skill-box wow slideInLeft data-wow-delay="0.2s">
 							<img src="img/icons/code.svg" width="91" hight="72" alt="">
 							<div class="holder">
 								<span class="vertical-line"></span>
@@ -50,7 +47,7 @@
 								<span class="horizontal-line"></span>
 							</div>
 						</div>
-						<div class="skill-box">
+						<div class="skill-box wow slideInLeft data-wow-delay="0.4s">
 							<img src="img/icons/code.svg" width="91" hight="72" alt="">
 							<div class="holder">
 								<span class="vertical-line"></span>
@@ -59,7 +56,7 @@
 								<span class="horizontal-line"></span>
 							</div>
 						</div>
-						<div class="skill-box">
+						<div class="skill-box wow slideInLeft data-wow-delay="0.6s">
 							<img src="img/icons/code.svg" width="91" hight="72" alt="">
 							<div class="holder">
 								<span class="vertical-line"></span>
@@ -67,129 +64,126 @@
 								<p class="skill-description">eget sit amet tellus cras<br>adipiscing enim eu turpis<br>egestas pretium aenean </p>
 								<span class="horizontal-line"></span>
 							</div>
-						</div>
-					</div>
+					</section>
 				</div>
 			</div>
 		</div>
 		<!-- Портфолио -->
-		<div id="portfolio" class="portfolio">
-			<div class="portfolio-section">
+		<section id="portfolio" class="portfolio">
 				<div class="wrapper">
-					<h2 class="title">Портфолио</h2>
-					<p class="portfolio-description">eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean </p>
-					<div class="swiper-container">
+					<h2 class="title wow slideInLeft">Портфолио</h2>
+					<p class="portfolio-description wow slideInLeft">В данной секции представлены все созданные проекты</p>
+					<div class="swiper-container wow bounceInUp  data-wow-duration = "0.20s">
 						<div class="swiper-wrapper">
 							<div class="portfolio-container swiper-slide">
 								<div class="portfolio-box">
 									<div class="overlay" onclick="window.open('https://r0dionix.github.io/projects/Waxom%20site%202.3/','new_window');"></div>
-									<div class="rectangle"><img src="img/projects/1.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/projects/1.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
 									<div class="overlay" onclick="window.open('https://r0dionix.github.io/projects/Pizza%20Site/','new_window');" ></div>
-									<div class="rectangle"><img src="img/projects/2.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/projects/2.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
 									<div class="overlay" onclick="window.open('https://r0dionix.github.io/projects/Test_1_Landing_Page_1.2/','new_window');"></div>
-									<div class="rectangle"><img src="img/projects/3.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/projects/3.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
 									<div class="overlay" onclick="window.open('https://r0dionix.github.io/projects/mamon_pro/','new_window');"></div>
-									<div class="rectangle"><img src="img/projects/4.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/projects/4.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-							</div>
-							<div class="portfolio-container swiper-slide">
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 							</div>
 							<div class="portfolio-container swiper-slide">
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-							</div>
-							<div class="portfolio-container swiper-slide">
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
-								</div>
-								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 							</div>
 							<div class="portfolio-container swiper-slide">
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 								<div class="portfolio-box">
-									<div class="rectangle"><img src="img/template.png" alt=""></div>
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+							</div>
+							<div class="portfolio-container swiper-slide">
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+							</div>
+							<div class="portfolio-container swiper-slide">
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
+								</div>
+								<div class="portfolio-box">
+									<div class="rectangle"><img class="project_img" src="img/template.png" alt=""></div>
 								</div>
 							</div>
 						</div>
 						<div class="swiper-pagination"></div>
 					</div>
 				</div>
-			</div>
-		</div>
+		</section>
 		<!-- Подвал -->
 		<div class="line"></div>
 		<footer id="footer" class="footer">
@@ -220,5 +214,9 @@
 		},
 		});
 		</script>
+		<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 	</body>
 </html>

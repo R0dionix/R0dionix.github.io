@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('../webfonts/icons.ttf?av8lg9') format('truetype'),
+    url('../webfonts/icons.woff?av8lg9') format('woff'),
+    url('../webfonts/icons.svg?av8lg9#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-menu:before {
+  content: "\e909";
+}
+.icon-linkedin:before {
+  content: "\e904";
+}
+.icon-tiktok:before {
+  content: "\e905";
+}
+.icon-youtube:before {
+  content: "\e906";
+}
+.icon-facebook:before {
+  content: "\e907";
+}
+.icon-instagram:before {
+  content: "\e908";
+}
+.icon-arrow:after {
+  content: "\e900";
+}
+.icon-expert:before {
+  content: "\e901";
+}
+.icon-help:before {
+  content: "\e902";
+}
+.icon-rate:before {
+  content: "\e903";
+}

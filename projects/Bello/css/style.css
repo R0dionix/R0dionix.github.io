@@ -695,7 +695,7 @@ h1, h2, p, h3 {
 .footer__item-input-submit {
   cursor: pointer;
   color: white;
-  background: #126F85 url(/img/footer/arrow.svg) 70% center no-repeat;
+  background: #126F85 url(../img/footer/arrow.svg) 70% center no-repeat;
   border: none;
   border-radius: 0 5px 5px 0;
   padding: 0 40px 0 0;

@@ -24,9 +24,6 @@ body {
 	font-size: 19px;
 	color: $gray-blue;
 }
-.lock {
-	overflow: hidden;
-}
 span {
 	display: inline-block;
 }
@@ -584,7 +581,7 @@ h1, h2, p, h3 {
 .footer__item-input-submit {
 	cursor: pointer;
 	color: white;
-	background: #126F85 url(/img/footer/arrow.svg) 70% center no-repeat;
+	background: #126F85 url(../img/footer/arrow.svg) 70% center no-repeat;
 	border: none;
 	border-radius: 0 5px 5px 0;
 	padding: 0 40px 0 0;
@@ -628,13 +625,9 @@ h1, h2, p, h3 {
 /* Нижний контент */
 .footer-copy {
     margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1320px;
-	padding-top: 18px;
-	padding-bottom: 18px;
+    padding: 18px 15px;
 	background-color: #F8F8F8;
 }
 .copyright {
 	font-size: 16px;
 }
-

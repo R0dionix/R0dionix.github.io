@@ -94,6 +94,7 @@
 }
 
 .main {
+    position: relative;
     @extend %bg-cover;
     background-attachment: fixed;
     &__content {

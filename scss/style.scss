@@ -95,7 +95,6 @@
 
 .main {
     @extend %bg-cover;
-    transform: translateZ(0);
     background-attachment: fixed;
 
     &__content {

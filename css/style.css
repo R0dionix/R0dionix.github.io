@@ -309,6 +309,8 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 *,
@@ -535,8 +537,6 @@ button {
 }
 
 .main {
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
   background-attachment: fixed;
 }
 .main__content {

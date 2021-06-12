@@ -535,6 +535,7 @@ button {
 }
 
 .main {
+  -webkit-backface-visibility: hidden;
   background-attachment: fixed;
 }
 .main__content {

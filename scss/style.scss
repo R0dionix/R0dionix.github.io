@@ -94,6 +94,7 @@
 }
 
 .main {
+    -webkit-backface-visibility: hidden;
     @extend %bg-cover;
     background-attachment: fixed;
 

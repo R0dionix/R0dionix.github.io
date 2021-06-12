@@ -82,13 +82,13 @@
 // ------------ Главный экран ------------
 
 .main__wrapper {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .fullscreen {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }

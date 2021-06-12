@@ -514,7 +514,7 @@ button {
   margin-left: 27px;
 }
 .main__wrapper {
-  min-height: 100vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,7 +525,7 @@ button {
 }
 
 .fullscreen {
-  min-height: 100vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

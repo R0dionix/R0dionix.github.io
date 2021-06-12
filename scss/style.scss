@@ -16,7 +16,6 @@
 // ------------ Шапка ------------
 
 .header {
-    transform: translateZ(0);
     transition: ease-in-out all 0.35s;
     position: absolute;
     width: 100%;
@@ -96,6 +95,7 @@
 
 .main {
     @extend %bg-cover;
+    transform: translateZ(0);
     background-attachment: fixed;
 
     &__content {

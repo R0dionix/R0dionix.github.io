@@ -22,7 +22,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 	.contact__form-input:first-of-type {
 	    margin-right: 0;
 	    margin-bottom: 12px;
@@ -135,7 +135,7 @@
 	}
 }
 
-@media (max-width: 493px) {
+@media (max-width: 530px) {
 	.main__title {
 		@include font-semi-bold;
 		font-size: 36px;

@@ -930,7 +930,7 @@ textarea.control:placeholder {
             order: 2;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .contact__form-input:first-of-type {
     margin-right: 0;
     margin-bottom: 12px;
@@ -1054,7 +1054,7 @@ textarea.control:placeholder {
     margin-left: 10px;
   }
 }
-@media (max-width: 493px) {
+@media (max-width: 530px) {
   .main__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;

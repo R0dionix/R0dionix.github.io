@@ -494,7 +494,6 @@ button {
 }
 
 .header--fixed {
-  -webkit-backface-visibility: hidden;
   z-index: 3;
   position: fixed;
   background-color: #3366CC;
@@ -536,7 +535,6 @@ button {
 }
 
 .main {
-  -webkit-backface-visibility: hidden;
   background-attachment: fixed;
 }
 .main__content {

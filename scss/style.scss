@@ -48,7 +48,6 @@
 }
 
 .header--fixed {
-    -webkit-backface-visibility: hidden;
     z-index: 3;
     position: fixed;
     background-color: $theme-color;
@@ -95,7 +94,6 @@
 }
 
 .main {
-    -webkit-backface-visibility: hidden;
     @extend %bg-cover;
     background-attachment: fixed;
 

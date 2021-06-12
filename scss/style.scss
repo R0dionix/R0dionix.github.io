@@ -94,6 +94,7 @@
 }
 
 .main {
+    overflow: auto;
     @extend %bg-cover;
     background-attachment: fixed;
 

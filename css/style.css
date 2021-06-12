@@ -535,6 +535,7 @@ button {
 }
 
 .main {
+  overflow: auto;
   background-attachment: fixed;
 }
 .main__content {

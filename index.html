@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Портфолио</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a class="logo__link" href="#">Rodionix</a>
+                </div>
+
+                <div class="burger-btn">
+                    <span></span>
+                </div>
+                <nav class="menu header__menu">
+                    <ul class="menu__list header__menu-list">
+                        <li class="menu__list-item header__menu-list-item">
+                            <a class="menu__link header__link" href="#main">Главная</a>
+                        </li>
+                        <li class="menu__list-item header__menu-list-item">
+                            <a class="menu__link header__link" href="#about">Обо мне</a>
+                        </li>
+                        <li class="menu__list-item header__menu-list-item">
+                            <a class="menu__link header__link" href="#services">Услуги</a>
+                        </li>
+                        <li class="menu__list-item header__menu-list-item">
+                            <a class="menu__link header__link" href="#portfolio">Портфолио</a>
+                        </li>
+                        <li class="menu__list-item header__menu-list-item">
+                            <a class="menu__link header__link" href="#feedback">Отзывы</a>
+                        </li>
+                        <li class="menu__list-item header__menu-list-item">
+                            <a class="menu__link header__link" href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <div class="main__wrapper">
+        <section id="main" class="main fullscreen" style="background-image: url(img/bg.jpg);">
+            <div class="container">
+                <div class="main__content">
+                    <h3 class="main__headline">Создание</h3>
+                    <h1 class="main__title">Сайтов под ключ</h1>
+                    <p class="main__desc">WEB-Дизайн | UX-Дизайн | WEB-Разработка | Посадка на Wordpress</p>
+                    <a class="btn" href="#services">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__image">
+                    <img src="img/about/1.jpg" alt="">
+                </div>
+                <div class="about__content">
+                    <h2 class="title about__title">Обо <span>мне</span></h2>
+                    <p class="about__desc">Меня зовут Родион, я занимаюсь веб - разработкой и веб - дизайном с 2017 года. Если вам требуется веб - продукт, который должен решать задачу и привлекать аудиторию, то вы обратились по адресу. В своей работе я применяю комплексный стандартизированный подход к процессу прототипирования, дизайна и разработки, что гарантирует качество конечного продукта.</p>
+                    <p class="about__desc">Качественный результат зависит от правильного технического задания. Для того, чтобы понять род вашей деятельности я провожу с вами бриф (Интервью).</p>
+                    <ul class="about__social">
+                        <li class="about__social-item">
+                            <a class="about__link" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="img/icons/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="about__social-item">
+                            <a class="about__link" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="img/icons/sprite.svg#github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="about__social-item">
+                            <a class="about__link" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="about__social-item">
+                            <a class="about__link" href="#">
+                                <svg class="social-icon">
+                                    <use xlink:href="img/icons/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="page services">
+        <div class="container">
+            <h2 class="title services__title">Мои <span>услуги</span></h2>
+            <div class="inner services__inner">
+                <div class="services__item">
+                    <div class="services__box">
+                        <div class="services__item-icon">
+                            <svg class="services-icon">
+                                <use xlink:href="img/icons/sprite.svg#design"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services__item-title">Дизайн</h3>
+                        <p class="services__item-desc">Создание уникального дизайн - макета учитывая специфику вашего бизнеса, либо вашей деятельности</p>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__box">
+                        <div class="services__item-icon">
+                            <svg class="services-icon">
+                                <use xlink:href="img/icons/sprite.svg#dev"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services__item-title">Разработка</h3>
+                        <p class="services__item-desc">Когда дизайн - макет готов и утвержден, следующим шагом следует разработка страницы</p>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__box">
+                        <div class="services__item-icon">
+                            <svg class="services-icon">
+                                <use xlink:href="img/icons/sprite.svg#adapt"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services__item-title">Адаптивность</h3>
+                        <p class="services__item-desc">Ваш веб - сайт будет отзывчив на любом устройстве: телефоны, планшеты, телевизоры</p>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__box">
+                        <div class="services__item-icon">
+                            <svg class="services-icon">
+                                <use xlink:href="img/icons/sprite.svg#integr"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services__item-title">Интеграция</h3>
+                        <p class="services__item-desc">Посадка вашего готового веб - сайта на систему управления контента ( CMS ) Wordpress</p>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__box">
+                        <div class="services__item-icon">
+                            <svg class="services-icon">
+                                <use xlink:href="img/icons/sprite.svg#host"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services__item-title">Хостинг</h3>
+                        <p class="services__item-desc">Размещение готового продукта на удаленном сервере для публикации в сети интернет</p>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__box">
+                        <div class="services__item-icon">
+                            <svg class="services-icon">
+                                <use xlink:href="img/icons/sprite.svg#sup"></use>
+                            </svg>
+                        </div>
+                        <h3 class="services__item-title">Поддержка</h3>
+                        <p class="services__item-desc">Помощь в решении проблем различной сложности, обновление ранее реализованных проектов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="page portfolio">
+        <div class="container">
+            <h2 class="title portfolio__title">Мои <span>работы</span></h2>
+            <ul class="filter-menu__list">
+                <li class="filter filter-menu__list-item" data-filter="all">Все</li>
+                <li class="filter filter-menu__list-item" data-filter=".website">Веб - сайты</li>
+                <li class="filter filter-menu__list-item" data-filter=".concept">Концепты</li>
+                <li class="filter filter-menu__list-item" data-filter=".design">Дизайн</li>
+                <li class="filter filter-menu__list-item" data-filter=".photoshop">Фотошоп</li>
+            </ul>
+            <div id="portfolio__inner" class="inner portfolio__inner">
+                <div class="portfolio__item mix website">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/1.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item mix concept">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/2.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item mix concept">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/3.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item mix design">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/4.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item mix design">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/5.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item mix design">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/6.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item mix photoshop">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/7.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item mix photoshop">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/8.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item mix photoshop">
+                    <div class="portfolio__box">
+                        <div class="portfolio__item-img">
+                            <img src="img/portfolio/9.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-info">
+                            <div class="portfolio__btn"><a class="btn portfolio__link" href="#">Подробнее</a></div>
+                            <h4 class="portfolio__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <div class="inner feedback__inner">
+                <div class="feedback__slider">
+                    <div class="slider-body">
+                        <div class="feedback__slider-item">
+                            <div class="feedback__avatar">
+                                <img src="img/feedback/avatar1.jpg" alt="">
+                            </div>
+                            <p class="feedback__comment">
+                                В отличие от произведений поэтов барокко, гиперцитата диссонирует палимпсест. Расположение эпизодов аллитерирует прозаический строфоид.
+                            </p>
+                            <div class="feedback__author">
+                                <h4 class="feedback__author-title">Имя #1</h4>
+                                <label>Предприниматель</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-body">
+                        <div class="feedback__slider-item">
+                            <div class="feedback__avatar">
+                                <img src="img/not-found2.jpg" alt="">
+                            </div>
+                            <p class="feedback__comment">
+                                В отличие от произведений поэтов барокко, гиперцитата диссонирует палимпсест. Расположение эпизодов аллитерирует прозаический строфоид.
+                            </p>
+                            <div class="feedback__author">
+                                <h4 class="feedback__author-title">Имя #2</h4>
+                                <label>Предприниматель</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-body">
+                        <div class="feedback__slider-item">
+                            <div class="feedback__avatar">
+                                <img src="img/not-found2.jpg" alt="">
+                            </div>
+                            <p class="feedback__comment">
+                                В отличие от произведений поэтов барокко, гиперцитата диссонирует палимпсест. Расположение эпизодов аллитерирует прозаический строфоид.
+                            </p>
+                            <div class="feedback__author">
+                                <h4 class="feedback__author-title">Имя #3</h4>
+                                <label>Предприниматель</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-body">
+                        <div class="feedback__slider-item">
+                            <div class="feedback__avatar">
+                                <img src="img/not-found2.jpg" alt="">
+                            </div>
+                            <p class="feedback__comment">
+                                В отличие от произведений поэтов барокко, гиперцитата диссонирует палимпсест. Расположение эпизодов аллитерирует прозаический строфоид.
+                            </p>
+                            <div class="feedback__author">
+                                <h4 class="feedback__author-title">Имя #4</h4>
+                                <label>Предприниматель</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-body">
+                        <div class="feedback__slider-item">
+                            <div class="feedback__avatar">
+                                <img src="img/not-found2.jpg" alt="">
+                            </div>
+                            <p class="feedback__comment">
+                                В отличие от произведений поэтов барокко, гиперцитата диссонирует палимпсест. Расположение эпизодов аллитерирует прозаический строфоид.
+                            </p>
+                            <div class="feedback__author">
+                                <h4 class="feedback__author-title">Имя #5</h4>
+                                <label>Предприниматель</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page new">
+        <div class="container">
+            <h2 class="title new__title">Новые <span>проекты</span></h2>
+            <div class="inner new__inner">
+                <div class="new__item">
+                    <div class="new__box">
+                        <div class="new__item-img">
+                            <img src="img/not-found.jpg" alt="">
+                        </div>
+                        <div class="new__item-info">
+                            <div class="new__btn"><a class="btn new__link" href="#">Подробнее</a></div>
+                            <h4 class="new__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item">
+                    <div class="new__box">
+                        <div class="new__item-img">
+                            <img src="img/not-found.jpg" alt="">
+                        </div>
+                        <div class="new__item-info">
+                            <div class="new__btn"><a class="btn new__link" href="#">Подробнее</a></div>
+                            <h4 class="new__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item">
+                    <div class="new__box">
+                        <div class="new__item-img">
+                            <img src="img/not-found.jpg" alt="">
+                        </div>
+                        <div class="new__item-info">
+                            <div class="new__btn"><a class="btn new__link" href="#">Подробнее</a></div>
+                            <h4 class="new__item-title">Сайт доставки фруктов</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="page contact">
+        <div class="container">
+            <h2 class="title contact__title">Обратная <span>связь</span></h2>
+            <div class="contact__inner">
+                <div class="contact__body">
+                    <div class="contact__info">
+                        <h3 class="contact__info-title">Напишите мне</h3>
+                        <p class="contact__info-desc">Напишите ваш вопрос и я обязательно на него отвечу</p>
+                    </div>
+                    <form action="https://formspree.io/f/xvodrgvz" method="POST" class="contact__form">
+                        <div class="contact__form-inputs">
+                            <input class="control contact__form-input" placeholder="Имя" name="name" id="full-name" type="text" required>
+                            <input class="control contact__form-input" placeholder="Email" name="_replyto" id="email-address" type="email" required>
+                        </div>
+                        <textarea class="control contact__form-textarea" placeholder="Ваше сообщение" name="message" id="message" required></textarea>
+                        <button class="btn contact__form-btn" type="submit" value="Submit" name="send">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="inner footer__inner">
+                <div class="footer__logo logo">
+                    <a class="logo__link" href="#">Rodionix</a>
+                </div>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a class="footer__link" href="#">
+                            <svg class="footer-icon social-icon">
+                                <use xlink:href="img/icons/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__link" href="#">
+                            <svg class="footer-icon social-icon">
+                                <use xlink:href="img/icons/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__link" href="#">
+                            <svg class="footer-icon social-icon">
+                                <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__link" href="#">
+                            <svg class="footer-icon social-icon">
+                                <use xlink:href="img/icons/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Скрипты -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/mixitup3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

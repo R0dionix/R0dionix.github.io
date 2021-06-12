@@ -1,0 +1,147 @@
+/*GLOBAL*/
+// Правило border-box
+	html {
+	    box-sizing: border-box;
+	}
+
+	*,
+	*::before,
+	*::after {
+	    box-sizing: inherit;
+	}
+
+// Базовая стилизация
+
+// Шрифты
+// @include font-bold подтягивает начертание и семейство шрифта с _mixins.scss
+// $blue подтягивает цвет из _vars.scss
+	h1,	h2, h3, h4, h5, h6 {
+	    margin: 0;
+	}
+	h1, h2 {
+		@include font-bold;
+	}
+	h1 {
+		font-size: 81px;
+		line-height: 98px;
+	}
+	h2 {
+		font-size: 54px;
+		line-height: 65px;
+	}
+	h3 {
+		@include font-semi-bold;
+		font-size: 36px;
+		line-height: 43px;
+	}
+	h4 {
+		@include font-semi-bold;
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	body, html {
+		-webkit-font-smoothing: antialiased;
+	    @include font-regular;
+	    font-size: 16px;
+	    line-height: 27px;
+	    color: $black;
+	    height: 100%;
+	}
+
+
+// Обнуление для списков, кнопок, input'ов, ссылок и textarea
+	ul {
+	    padding: 0;
+	    margin: 0;
+	}
+
+	li {
+	    display: inline-block;
+	}
+
+	a {
+		position: relative;
+	    text-decoration: none;
+	    display: inline-block;
+	}
+
+	input,
+	textarea {
+	    padding: 0;
+	    display: block;
+	    border: none;
+	}
+
+	button {
+		cursor: pointer;
+	    border: none;
+	}
+
+	// Контейнер
+		.container {
+		    max-width: 1140px;
+		    margin: 0 auto;
+		    padding: 0 15px;
+		}
+		.inner {
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+
+	// Базовый стиль кнопки
+		.btn {
+			@include font-bold;
+			font-size: 18px;
+			color: #fff;
+			line-height: 31px;
+			text-transform: uppercase;
+			padding: 17px 25px;
+			background-color: $theme-color;
+			border-radius: 5px;
+		}
+
+	// Базовый стиль заголовка
+		.title span{
+			color: $theme-color;
+		}
+
+	// Базовый социальных иконок
+		.social-icon {
+			display: block;
+			transition: ease-in-out all 0.35s;
+			fill: #212121; 
+		  	width: 32px; 
+		  	height: 32px;
+		  	&:hover {
+		  		fill: $theme-color;
+		  	}
+		}
+		.services-icon {
+			display: block;
+			fill: $theme-color;
+			width: 54px;
+			height: 54px;
+		}
+
+
+		// Отступы для основных секций
+		.page {
+		    padding: 86px 0 100px;
+		}
+		// Скругления для блоков изображений
+		.about__image, 
+		.about__image img,
+		.portfolio__item-img,
+		.portfolio__item-img img,
+		.new__item-img,
+		.new__item-img img {	
+			border-radius: 5px;
+		}
+		.overflow {
+			overflow: hidden;
+		}

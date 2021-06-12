@@ -1,0 +1,35 @@
+/*EXTENDS*/
+// -----------------------------------------------------
+// Шаблоны [Перечисляет элементы через запятую и добавляет свойства] - метод добавления @extend %name;
+
+// Flexbox
+	%flex-jcsb {
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	%flex-jcc {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	%flex-dc {
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	%flex-jcsa {
+		display: flex;
+	    justify-content: space-around;
+	    align-items: center;
+	}
+	%bg-cover {
+		background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center center;
+	}
+	%tac {
+		text-align: center;
+	}
+// -----------------------------------------------------

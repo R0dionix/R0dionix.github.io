@@ -1,0 +1,18 @@
+
+// -----------------------------------------------------
+// Миксины [Добавляет кусок кода в указанное место] - метод добавления @include name;
+
+// Шрифты
+	@mixin font-bold {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+	}
+	@mixin font-semi-bold {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+	}
+	@mixin font-regular {
+		font-family: 'Source Sans Pro', sans-serif;
+	    font-weight: 400;
+	}
+// -----------------------------------------------------

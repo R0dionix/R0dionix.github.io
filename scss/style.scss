@@ -1,0 +1,514 @@
+@import 'mixins';
+@import 'vars';
+@import 'fonts';
+@import 'libs';
+@import 'extends';
+@import 'global';
+
+
+// Стилизация лоадера
+
+
+
+.burger-btn {
+    display: none;
+}
+// ------------ Шапка ------------
+
+.header {
+    transition: ease-in-out all 0.35s;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid rgba(#fff, 0.50);
+
+    &__inner {
+        @extend %flex-jcsb;
+        height: 75px;
+    }
+}
+
+.header__link {
+    padding: 25px 0;
+    color: $gray-2;
+    &::after {
+        content: '';
+        bottom: 2px;
+        right: 0;
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: ease all 0.55s;
+    }
+
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.header--fixed {
+    z-index: 3;
+    position: fixed;
+    background-color: $theme-color;
+}
+
+// Логотип
+.logo {
+    z-index: 4;
+    &__link {
+        @include font-bold;
+        font-size: 24px;
+        color: $gray-2;
+        text-transform: uppercase;
+    }
+}
+
+// Меню
+.menu {
+    &__list {}
+    &__list-item {
+        +.menu__list-item {
+            margin-left: 27px;
+        }
+    }
+
+    &__link {}
+}
+
+// ------------ /Шапка ------------
+
+
+// ------------ Главный экран ------------
+
+.main__wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullscreen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    @extend %bg-cover;
+    overflow-y: scroll;
+    top: 0;
+    background-attachment: fixed;
+
+    &__content {
+        color: #fff;
+        text-align: center;
+    }
+
+    &__headline {}
+
+    &__title {
+        color: $gray-2;
+        margin-bottom: 14px;
+    }
+
+    &__desc {
+        text-transform: uppercase;
+        margin-bottom: 17px;
+    }
+}
+
+// ------------ /Главный экран ------------
+
+
+// ------------ Обо мне ------------
+
+.about {
+    padding: 100px 0px;
+
+    &__inner {
+        @extend %flex-jcc;
+    }
+
+    &__image {
+        margin-right: 60px;
+        box-shadow: 9px 12px 19px 2px rgba(31, 31, 31, 0.05);
+        width: 445px;
+        height: 434px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        width: 603px;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__desc {
+        +.about__desc {
+            margin-top: 30px;
+        }
+    }
+
+    // Ссылки на соц.сети
+    &__social {
+        margin-top: 30px;
+    }
+
+    &__link {}
+}
+
+.about__social-item+.about__social-item,
+.footer__social-item+.footer__social-item {
+    margin-left: 7px;
+}
+
+// ------------ /Обо мне ------------
+
+
+// ------------ Мои услуги ------------
+.services {
+    background-color: $gray;
+
+    &__inner {
+        @extend %flex-jcc;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin: 15px;
+        text-align: center;
+    }
+
+    &__box {
+        position: relative;
+        top: 0;
+        box-shadow: 9px 12px 19px 2px rgba(31, 31, 31, 0.05);
+        border-radius: 5px;
+        padding: 39px 20px 39px;
+        background-color: #fff;
+        max-width: 350px;
+        border-bottom: 5px solid transparent;
+        transition: ease-in-out all 0.35s;
+
+        &:hover {
+            top: -10px;
+            border-color: $theme-color;
+            box-shadow: 9px 12px 19px 2px rgba(31, 31, 31, 0.1);
+        }
+
+    }
+
+    &__item-icon {
+        padding: 13px;
+        margin-bottom: 7px;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+
+    &__item-title {
+        margin-bottom: 9px;
+    }
+
+    &__item-desc {}
+}
+
+.services__title,
+.new__title,
+.contact__title {
+    @extend %tac;
+    padding-bottom: 15px;
+}
+
+// Работы портфолио
+.portfolio {
+    &__title {
+        text-align: center;
+        padding-bottom: 34px;
+    }
+}
+
+.portfolio__inner,
+.new__inner {
+    @extend %flex-jcc;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+
+// Внешний вид блоков портфолио
+.portfolio__item,
+.new__item {
+    border-radius: 5px;
+    transition: ease-in-out box-shadow 0.35s;
+    box-shadow: 9px 12px 19px 2px rgba(31, 31, 31, 0.05);
+    margin: 15px;
+
+    &:hover {
+        box-shadow: 9px 12px 19px 2px rgba(31, 31, 31, 0.1);
+    }
+}
+
+.portfolio__box,
+.new__box {
+    position: relative;
+}
+
+.portfolio__item-img,
+.new__item-img {
+    max-width: 350px;
+    height: 346px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.portfolio__item-info,
+.new__item-info {
+    transition: ease all 0.55s;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.4);
+    position: absolute;
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.portfolio__btn,
+.new__btn {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.portfolio__link,
+.new__link {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: $gray-2;
+}
+
+.portfolio__item-title,
+.new__item-title {
+    color: #fff;
+    background-color: $theme-color;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 25px 20px 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+// Фильтр работ
+.filter-menu {
+    &__list {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+.filter-menu__list-item {
+    @include font-semi-bold;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+
+    +.filter-menu__list-item {
+        margin-left: 27px;
+    }
+
+    &::after {
+        content: "";
+        width: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 2px;
+        background: $theme-color;
+        position: absolute;
+        transition: ease all 0.55s;
+    }
+
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+.filter--active::after {
+    width: 100%;
+}
+
+// Отзывы
+.feedback {
+    padding: 100px 0px;
+    background-color: $gray;
+
+    &__inner {}
+
+    &__slider {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    &__slider-item {
+        margin-bottom: 22px;
+        box-shadow: 9px 12px 19px 2px rgba(31, 31, 31, 0.05);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: grab;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 60px 20px 35px;
+    }
+
+    &__avatar {
+        margin-bottom: 16px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__comment {
+        margin-bottom: 20px;
+    }
+
+    &__author {}
+
+    &__author-title {}
+}
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-dots {
+    text-align: center;
+}
+
+.slick-dots li button {
+    transition: ease-in-out all 0.35s;
+    border-radius: 50%;
+    border: 1px solid $theme-color;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: $theme-color;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+
+// Контакты
+// Текст перед формой
+.contact__info {
+    padding-bottom: 9px;
+
+    &-title {
+        margin-bottom: 11px;
+    }
+}
+
+.contact {
+    background-color: $gray;
+
+    &__title {}
+
+    &__body {
+        box-shadow: 9px 12px 19px 2px rgba(31, 31, 31, 0.05);
+        margin: 15px auto 0px;
+        border-radius: 5px;
+        max-width: 618px;
+        padding: 34px 20px 50px;
+        background-color: #fff;
+    }
+
+    &__form {}
+
+    &__form-input {
+        height: 45px;
+    }
+
+    &__form-textarea {
+        resize: vertical;
+        height: 150px;
+        margin-bottom: 25px;
+    }
+}
+
+.contact__form-input:first-of-type {
+    margin-right: 22px;
+}
+
+.contact__form-inputs {
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.control {
+    padding: 9px 12px;
+    display: block;
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+input,
+textarea.control:placeholder {
+    color: #828282;
+}
+
+// Подвал
+.footer {
+    padding: 60px 0px;
+    background-color: $footer-bg;
+}
+
+.footer__inner {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    margin-bottom: 25px;
+}
+
+.footer-icon {
+    fill: #fff;
+}
+
+
+@import 'media';

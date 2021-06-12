@@ -536,6 +536,7 @@ button {
 
 .main {
   overflow-y: scroll;
+  top: 0;
   background-attachment: fixed;
 }
 .main__content {

@@ -45,6 +45,8 @@
 	}
 
 	body, html {
+		transform:translatez(0);
+-webkit-transform:translatez(0);
 		-webkit-font-smoothing: antialiased;
 	    @include font-regular;
 	    font-size: 16px;

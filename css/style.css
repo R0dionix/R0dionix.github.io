@@ -931,6 +931,16 @@ textarea.control:placeholder {
   }
 }
 @media (max-width: 768px) {
+  .contact__form-input:first-of-type {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .contact__form-inputs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
   .main__title {
     font-size: 54px;
     line-height: 65px;

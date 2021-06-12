@@ -83,17 +83,18 @@
 
 .main__wrapper {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 }
 
 .fullscreen {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 }
 
 .main {
+    padding: 50% 0;
     @extend %bg-cover;
     background-attachment: fixed;
 

@@ -535,6 +535,7 @@ button {
 }
 
 .main {
+  position: relative;
   background-attachment: fixed;
 }
 .main__content {

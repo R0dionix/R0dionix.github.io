@@ -912,6 +912,10 @@ textarea.control:placeholder {
   }
 }
 @media (max-width: 930px) {
+  .main {
+    background-attachment: scroll;
+  }
+
   .about__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -930,7 +934,7 @@ textarea.control:placeholder {
             order: 2;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .contact__form-input:first-of-type {
     margin-right: 0;
     margin-bottom: 12px;

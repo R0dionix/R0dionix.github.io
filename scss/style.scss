@@ -13,6 +13,7 @@
 .burger-btn {
     display: none;
 }
+
 // ------------ Шапка ------------
 
 .header {
@@ -30,6 +31,7 @@
 .header__link {
     padding: 25px 0;
     color: $gray-2;
+
     &::after {
         content: '';
         bottom: 2px;
@@ -56,6 +58,7 @@
 // Логотип
 .logo {
     z-index: 4;
+
     &__link {
         @include font-bold;
         font-size: 24px;
@@ -67,6 +70,7 @@
 // Меню
 .menu {
     &__list {}
+
     &__list-item {
         +.menu__list-item {
             margin-left: 27px;
@@ -97,6 +101,7 @@
     padding: 100px 0px;
     @extend %bg-cover;
     background-attachment: fixed;
+
     &__content {
         color: #fff;
         text-align: center;
@@ -296,6 +301,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
 .portfolio__link,
 .new__link {
     background-color: transparent;

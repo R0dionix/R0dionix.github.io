@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 // ------------------ Фиксированная шапка c расчётом высоты ------------------
 	let header = $("#header");
+    let headerInner = $(".header__inner");
     let main = $("#main");
     let mainHeight = main.innerHeight();
     let scrollPos = $(window).scrollTop();
@@ -18,8 +19,10 @@ $(document).ready(function(){
     function checkScroll(scrollPos, introH) {
         if( scrollPos > mainHeight ) {
             header.addClass("header--fixed");
+            headerInner.addClass("header__inner--fixed");
         } else {
             header.removeClass("header--fixed");
+            headerInner.removeClass("header__inner--fixed");
         }
     }
 

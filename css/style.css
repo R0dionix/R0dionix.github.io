@@ -309,6 +309,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 *,

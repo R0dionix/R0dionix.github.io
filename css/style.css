@@ -954,6 +954,8 @@ button {
   }
 
   .header__inner--fixed {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     height: 40px;
   }
 

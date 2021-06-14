@@ -39,7 +39,7 @@ $(document).ready(function(){
     // Инициализация слайдера
       $('.feedback__slider').slick({
         infinite: true,
-        // autoplay: true,
+        autoplay: true,
         arrows: false,
         dots: true
       });
@@ -53,20 +53,20 @@ $(document).ready(function(){
 
 
     // // Плавная прокрутка
-    $("body").on('click', '[href*="#"]', function(e){
-        event.preventDefault();
+    // $("body").on('click', '[href*="#"]', function(e){
+    //     event.preventDefault();
 
-        $('.burger-btn, .header__menu').removeClass('active');
-        $('body').removeClass('overflow');
+    //     $('.burger-btn, .header__menu').removeClass('active');
+    //     $('body').removeClass('overflow');
 
-      $("html, body").animate({
-        scrollTop: $($(this).attr("href")).offset().top + "px"
-      }, {
-        duration: 1000,
-        easing: "swing"
-      });
-      return false;
-    });
+    //   $("html, body").animate({
+    //     scrollTop: $($(this).attr("href")).offset().top + "px"
+    //   }, {
+    //     duration: 1000,
+    //     easing: "swing"
+    //   });
+    //   return false;
+    // });
 
 
 });

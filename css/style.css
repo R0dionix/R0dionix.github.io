@@ -494,6 +494,8 @@ button {
 }
 
 .header--fixed {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   z-index: 3;
   position: fixed;
   background-color: #3366CC;
@@ -954,8 +956,6 @@ button {
   }
 
   .header__inner--fixed {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     height: 40px;
   }
 

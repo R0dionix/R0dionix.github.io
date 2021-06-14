@@ -883,11 +883,6 @@ button {
   border-radius: 5px;
 }
 
-input,
-textarea.control:placeholder {
-  color: #828282;
-}
-
 .footer {
   padding: 60px 0px;
   background-color: #212121;
@@ -913,6 +908,11 @@ textarea.control:placeholder {
   }
 }
 @media (max-width: 930px) {
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+
   .page,
 .about,
 .feedback {

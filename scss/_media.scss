@@ -7,6 +7,10 @@
 
 
 @media (max-width: 930px) {
+	html {
+		margin-left: calc(100vw - 100%);
+	    margin-right: 0;
+	}
 
     .page,
     .about,

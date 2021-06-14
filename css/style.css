@@ -773,8 +773,6 @@ button {
   background-color: #F3F3F3;
 }
 .feedback__slider {
-  -ms-touch-action: auto;
-      touch-action: auto;
   max-width: 540px;
   margin: 0 auto;
 }

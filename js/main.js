@@ -39,7 +39,7 @@ $(document).ready(function(){
     // Инициализация слайдера
       $('.feedback__slider').slick({
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         arrows: false,
         dots: true
       });

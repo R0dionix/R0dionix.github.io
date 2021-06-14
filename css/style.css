@@ -1103,6 +1103,10 @@ button {
     margin-bottom: 0;
   }
 
+  .filter-menu__list-item {
+    font-size: 10px;
+  }
+
   .page,
 .about,
 .feedback {

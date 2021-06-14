@@ -373,8 +373,8 @@
     &__inner {}
 
     &__slider {
+        touch-action: auto;
         max-width: 540px;
-        max-height: 100%;
         margin: 0 auto;
     }
 
@@ -412,6 +412,7 @@
 }
 
 .slick-dots {
+    margin-top: 22px;
     text-align: center;
 }
 

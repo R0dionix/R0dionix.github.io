@@ -773,8 +773,9 @@ button {
   background-color: #F3F3F3;
 }
 .feedback__slider {
+  -ms-touch-action: auto;
+      touch-action: auto;
   max-width: 540px;
-  max-height: 100%;
   margin: 0 auto;
 }
 .feedback__slider-item {
@@ -811,6 +812,7 @@ button {
 }
 
 .slick-dots {
+  margin-top: 22px;
   text-align: center;
 }
 

@@ -40,8 +40,8 @@ $(document).ready(function(){
       $('.feedback__slider').slick({
         infinite: true,
         autoplay: true,
-        arrows: false
-        // dots: true
+        arrows: false,
+        dots: true
       });
 
 

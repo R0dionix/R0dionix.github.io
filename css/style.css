@@ -916,10 +916,6 @@ button {
     padding: 50px 0px;
   }
 
-  .main {
-    background-attachment: scroll;
-  }
-
   .about__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

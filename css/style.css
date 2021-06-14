@@ -362,7 +362,6 @@ body, html {
   font-size: 16px;
   line-height: 27px;
   color: #111111;
-  height: 100%;
 }
 
 ul {
@@ -908,11 +907,6 @@ button {
   }
 }
 @media (max-width: 930px) {
-  html {
-    margin-left: calc(100vw - 100%);
-    margin-right: 0;
-  }
-
   .page,
 .about,
 .feedback {

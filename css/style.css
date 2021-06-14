@@ -774,6 +774,7 @@ button {
 }
 .feedback__slider {
   max-width: 540px;
+  height: 100%;
   margin: 0 auto;
 }
 .feedback__slider-item {
@@ -914,6 +915,10 @@ button {
 .about,
 .feedback {
     padding: 50px 0px;
+  }
+
+  .main {
+    background-attachment: scroll;
   }
 
   .about__inner {

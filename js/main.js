@@ -50,7 +50,7 @@ $(document).ready(function() {
     // Меню бургер
     $('.burger-btn').click(function(event) {
         $('.burger-btn, .header__menu').toggleClass('active');
-        $('body').toggleClass('overflow');
+        $('html, body').toggleClass('overflow');
     });
 
 
@@ -59,7 +59,7 @@ $(document).ready(function() {
         event.preventDefault();
 
         $('.burger-btn, .header__menu').removeClass('active');
-        $('body').removeClass('overflow');
+        $('html, body').removeClass('overflow');
 
         $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top + "px"

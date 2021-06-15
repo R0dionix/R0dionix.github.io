@@ -1147,6 +1147,10 @@ button {
   }
 }
 @media (max-width: 448px) {
+  .portfolio__item-title, .new__item-title {
+    font-size: 20px;
+  }
+
   .portfolio__title {
     padding-bottom: 15px;
   }
@@ -1156,10 +1160,6 @@ button {
   }
 }
 @media (max-width: 358px) {
-  .portfolio__item-title, .new__item-title {
-    font-size: 20px;
-  }
-
   .main__title {
     margin-bottom: 0;
   }

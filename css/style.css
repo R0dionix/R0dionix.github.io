@@ -1093,7 +1093,7 @@ button {
     width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 75px 15px 0px;
+    padding: 70px 15px 0px;
   }
 
   .header__menu.active {
@@ -1111,7 +1111,7 @@ button {
   }
 
   .header__link {
-    padding: 0px 0px 10px;
+    padding: 0px 0px 15px;
     width: 100%;
   }
 }

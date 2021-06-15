@@ -446,7 +446,9 @@
 
     &__author-title {}
 }
-
+.slick-slider {
+    touch-action: auto;
+}
 .slick-slide {
     margin: 0 20px;
 }

@@ -43,7 +43,8 @@ $(document).ready(function() {
         infinite: true,
         autoplay: true,
         arrows: false,
-        dots: true
+        dots: true,
+        pauseOnFocus: false
     });
 
 

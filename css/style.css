@@ -857,6 +857,11 @@ button {
 .feedback__comment {
   margin-bottom: 20px;
 }
+.slick-slider {
+  -ms-touch-action: auto;
+      touch-action: auto;
+}
+
 .slick-slide {
   margin: 0 20px;
 }

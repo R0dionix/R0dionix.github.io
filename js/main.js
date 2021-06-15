@@ -71,7 +71,7 @@ $(document).ready(function() {
     });
 
     // Прелоадер
-    $(window).on('load', function() {
+    $(function() {
         $('.preloader').delay(2500).fadeOut('slow');
     });
 

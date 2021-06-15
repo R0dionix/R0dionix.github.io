@@ -1,7 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-// ------------------ Фиксированная шапка c расчётом высоты ------------------
-	let header = $("#header");
+    // ------------------ Фиксированная шапка c расчётом высоты ------------------
+    let header = $("#header");
     let headerInner = $(".header__inner");
     let main = $("#main");
     let mainHeight = main.innerHeight();
@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 
     function checkScroll(scrollPos, introH) {
-        if( scrollPos > mainHeight ) {
+        if (scrollPos > mainHeight) {
             header.addClass("header--fixed");
             headerInner.addClass("header__inner--fixed");
         } else {
@@ -26,46 +26,53 @@ $(document).ready(function(){
         }
     }
 
-// ------------------ MixItUp ------------------
+    // ------------------ MixItUp ------------------
     mixitup('#portfolio__inner', {
-      classNames: {
-        block: 'filter', /* mixitup */
-        elementFilter: '', /* control */
-        // elementSort: 'sort-btn' /* control */
-      }
+        classNames: {
+            block: 'filter',
+            /* mixitup */
+            elementFilter: '',
+            /* control */
+            // elementSort: 'sort-btn' /* control */
+        }
     });
 
-// ------------------ Slick ------------------
+    // ------------------ Slick ------------------
     // Инициализация слайдера
-      $('.feedback__slider').slick({
+    $('.feedback__slider').slick({
         infinite: true,
         autoplay: true,
         arrows: false,
         dots: true
-      });
+    });
 
 
     // Меню бургер
     $('.burger-btn').click(function(event) {
-    $('.burger-btn, .header__menu').toggleClass('active');
-    $('body').toggleClass('overflow');
+        $('.burger-btn, .header__menu').toggleClass('active');
+        $('body').toggleClass('overflow');
     });
 
 
-    // // Плавная прокрутка
-    $("body").on('click', '[href*="#"]', function(e){
+    // Плавная прокрутка
+    $("body").on('click', '[href*="#"]', function(e) {
         event.preventDefault();
 
         $('.burger-btn, .header__menu').removeClass('active');
         $('body').removeClass('overflow');
 
-      $("html, body").animate({
-        scrollTop: $($(this).attr("href")).offset().top + "px"
-      }, {
-        duration: 1000,
-        easing: "swing"
-      });
-      return false;
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 1000,
+            easing: "swing"
+        });
+        return false;
+    });
+
+    // Прелоадер
+    $(window).on('load', function() {
+        $('.preloader').delay(2500).fadeOut('slow');
     });
 
 

@@ -8,6 +8,48 @@
 
 // Стилизация лоадера
 
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212121;
+    z-index: 10;
+
+    &__loader {
+        position: fixed;
+        width: 75px;
+        height: 75px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        border: 10px solid $gray-2;
+        border-radius: 50%;
+        border-top-color: $theme-color;
+        animation: 1s spin infinite linear;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 
 .burger-btn {

@@ -197,6 +197,9 @@
 }
 
 @media (max-width: 358px) {
+	.portfolio__item-title, .new__item-title {
+		font-size: 20px;
+	}
     .main__title {
         margin-bottom: 0;
     }

@@ -48,9 +48,9 @@ $(document).ready(function() {
 
 
     // Меню бургер
-    $('.burger-btn').click(function(event) {
+    $('.burger-btn').click(function() {
         $('.burger-btn, .header__menu').toggleClass('active');
-        $('html, body').toggleClass('overflow');
+        $('body').toggleClass('overflow');
     });
 
 
@@ -59,7 +59,7 @@ $(document).ready(function() {
         event.preventDefault();
 
         $('.burger-btn, .header__menu').removeClass('active');
-        $('html, body').removeClass('overflow');
+        $('body').removeClass('overflow');
 
         $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top + "px"

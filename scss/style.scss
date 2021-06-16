@@ -91,9 +91,8 @@
 }
 
 .header--fixed {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     z-index: 3;
+    top: 0;
     position: fixed;
     background-color: $theme-color;
 }

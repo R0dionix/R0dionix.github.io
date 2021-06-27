@@ -378,6 +378,7 @@
     font-size: 18px;
     cursor: pointer;
     position: relative;
+    transition: ease-in-out all 0.35s;
 
     +.filter-menu__list-item {
         margin-left: 27px;

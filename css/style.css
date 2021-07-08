@@ -860,13 +860,13 @@ button {
   margin-bottom: 20px;
 }
 .slick-slider {
-  overflow: hidden;
   -ms-touch-action: auto;
       touch-action: auto;
 }
 
 .slick-slide {
   margin: 0 20px;
+  height: auto;
 }
 
 .slick-dots {

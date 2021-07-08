@@ -448,6 +448,7 @@
 }
 .slick-slider {
     touch-action: auto;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 .slick-slide {
     margin: 0 20px;

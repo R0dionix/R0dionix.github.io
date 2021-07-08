@@ -447,6 +447,7 @@
     &__author-title {}
 }
 .slick-slider {
+    overflow: hidden;
     touch-action: auto;
 }
 .slick-track {
@@ -454,7 +455,6 @@
 }
 .slick-slide {
     margin: 0 20px;
-    height: auto;
 }
 
 .slick-dots {

@@ -16,7 +16,7 @@ $(document).ready(function() {
         checkScroll(scrollPos, mainHeight);
     });
 
-    function checkScroll(scrollPos, introH) {
+    function checkScroll(scrollPos, mainHeight) {
         if (scrollPos > mainHeight) {
             header.addClass("header--fixed");
             headerInner.addClass("header__inner--fixed");
@@ -59,7 +59,7 @@ $(document).ready(function() {
         $('body').removeClass('overflow');
 
         $("html, body").animate({
-            scrollTop: $($(this).attr("href")).offset().top + "px"
+            scrollTop: $($(this).attr("href")).offset().top + 10
         }, {
             duration: 1000,
             easing: "swing"

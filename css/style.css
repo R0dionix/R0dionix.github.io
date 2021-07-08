@@ -864,6 +864,12 @@ button {
       touch-action: auto;
 }
 
+.slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .slick-slide {
   margin: 0 20px;
   height: auto;

@@ -449,6 +449,9 @@
 .slick-slider {
     touch-action: auto;
 }
+.slick-track {
+  display: flex !important;
+}
 .slick-slide {
     margin: 0 20px;
     height: auto;

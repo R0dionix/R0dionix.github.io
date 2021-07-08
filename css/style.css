@@ -829,6 +829,7 @@ button {
 .feedback__slider {
   max-width: 540px;
   margin: 0 auto;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .feedback__slider-item {
   -webkit-box-shadow: 9px 12px 19px 2px rgba(31, 31, 31, 0.05);
@@ -862,7 +863,6 @@ button {
 .slick-slider {
   -ms-touch-action: auto;
       touch-action: auto;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .slick-slide {

@@ -59,7 +59,7 @@ $(document).ready(function() {
         $('body').removeClass('overflow');
 
         $("html, body").animate({
-            scrollTop: $($(this).attr("href")).offset().top + 10
+            scrollTop: $($(this).attr("href")).offset().top + 10 
         }, {
             duration: 1000,
             easing: "swing"

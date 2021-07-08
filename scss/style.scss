@@ -411,12 +411,13 @@
     padding: 100px 0px;
     background-color: $gray;
 
-    &__inner {}
+    &__inner {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
 
     &__slider {
         max-width: 540px;
         margin: 0 auto;
-        -webkit-transform: translate3d(0, 0, 0);
     }
 
     &__slider-item {

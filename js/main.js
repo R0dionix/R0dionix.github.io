@@ -30,10 +30,7 @@ $(document).ready(function() {
     mixitup('#portfolio__inner', {
         classNames: {
             block: 'filter',
-            /* mixitup */
             elementFilter: '',
-            /* control */
-            // elementSort: 'sort-btn' /* control */
         }
     });
 

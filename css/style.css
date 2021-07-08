@@ -862,6 +862,7 @@ button {
 .slick-slider {
   -ms-touch-action: auto;
       touch-action: auto;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .slick-slide {

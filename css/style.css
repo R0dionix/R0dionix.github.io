@@ -866,7 +866,6 @@ button {
 
 .slick-slide {
   margin: 0 20px;
-  will-change: transform;
 }
 
 .slick-dots {

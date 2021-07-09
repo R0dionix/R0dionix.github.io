@@ -39,6 +39,7 @@ $(document).ready(function() {
     $('.feedback__slider').slick({
         infinite: true,
         autoplay: true,
+        useTransform: false,
         arrows: false,
         dots: true
     });

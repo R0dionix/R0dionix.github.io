@@ -39,11 +39,21 @@ $(document).ready(function() {
     $('.feedback__slider').slick({
         infinite: true,
         autoplay: true,
-        useTransform: false,
+        speed: 300,
+        adaptiveHeight: true,
+        pauseOnHover: false,
+        // useTransform: false,
         arrows: false,
-        dots: true
-    });
+        dots: true,
+        responsive: [
+            {
+              breakpoint: 780,
+              settings: {
 
+              }
+            },
+          ]
+    });
 
     // Меню бургер
     $('.burger-btn').click(function() {
